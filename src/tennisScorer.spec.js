@@ -48,4 +48,11 @@ describe("TennisScorer", () => {
     expect(scorer.showScore()).toEqual("0 - 40");
   });
 
+  it("Jugador 1 marco 3 veces y jugador marca 3 --> Deuce", () => {
+    const scorer = new TennisScorer();
+    scorer.player2Scores(3);
+    scorer.player1Scores(3);
+    expect(scorer.showScore()).toEqual("Deuce");
+  });
+
 });
