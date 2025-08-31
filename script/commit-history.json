@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T21:35:43.000Z",
+      "message": "build: se instalo y configuro entorno de pruebas con jest y babel",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 4171,
+      "additions": 1930,
+      "deletions": 2241,
+      "date": "2025-08-31"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
