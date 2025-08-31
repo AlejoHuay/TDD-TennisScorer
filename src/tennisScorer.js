@@ -34,6 +34,12 @@ class TennisScorer {
       this.player2Points+=points;
     }
   }
+  player1Scores(){
+    this.player1Points++;
+  }
+  player2Scores(){
+    this.player2Points++;
+  }
 }
 
 export default TennisScorer;

@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "75c696d69fb74fc8165913e8ea2cf165af5496cb",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T22:40:03.000Z",
       "message": "refactoring: se mejoro el metodo playerScores",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/75c696d69fb74fc8165913e8ea2cf165af5496cb"
     },
     "stats": {
       "total": 37,
@@ -280,6 +280,25 @@
       "date": "2025-08-31"
     },
     "coverage": 100,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T22:45:01.000Z",
+      "message": "feat: se agrego 2 metodos Scores adicionales",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-08-31"
+    },
+    "coverage": 92.31,
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
