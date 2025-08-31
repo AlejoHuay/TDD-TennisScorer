@@ -247,17 +247,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "775f38e2397b83bf6b04d5e2fec979b6bb688fc5",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T22:34:41.000Z",
       "message": "feat: Estando en Deuce si marca jugador 2 -->  Advantage for 2",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/775f38e2397b83bf6b04d5e2fec979b6bb688fc5"
     },
     "stats": {
       "total": 9,
       "additions": 9,
       "deletions": 0,
+      "date": "2025-08-31"
+    },
+    "coverage": 100,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T22:40:03.000Z",
+      "message": "refactoring: se mejoro el metodo playerScores",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 19,
+      "deletions": 18,
       "date": "2025-08-31"
     },
     "coverage": 100,

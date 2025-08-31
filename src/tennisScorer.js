@@ -27,11 +27,12 @@ class TennisScorer {
     return "Love - Love";
   }
 
-  player1Scores(points) {
-    this.player1Points+=points;
-  }
-  player2Scores(points) {
-    this.player2Points+=points;
+  playerScores(player, points) {
+    if(player === 1){
+      this.player1Points+=points;
+    }else{
+      this.player2Points+=points;
+    }
   }
 }
 
