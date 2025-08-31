@@ -1,6 +1,7 @@
 class TennisScorer {
   constructor(){
     this.player1Points = 0;
+    this.player2Points = 0;
   }
 
   showScore(){
@@ -10,12 +11,17 @@ class TennisScorer {
       return "30 - 0"
     }else if(this.player1Points === 3){
       return "40 - 0"
+    }else if(this.player2Points === 1){
+      return "0 - 15";
     }
     return "Love - Love";
   }
-  
+
   player1Scores(points) {
     this.player1Points+=points;
+  }
+  player2Scores(points) {
+    this.player2Points+=points;
   }
 }
 

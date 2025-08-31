@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a6eec509f431a518d6ccb653fad8fa596d6c3766",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T21:57:58.000Z",
       "message": "refactoring: se mejoro el metodo player1Scores",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/a6eec509f431a518d6ccb653fad8fa596d6c3766"
     },
     "stats": {
       "total": 15,
@@ -148,6 +148,25 @@
     },
     "coverage": 100,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T22:13:53.000Z",
+      "message": "feat: Jugador 2 marca un punto ---> 0 - 15",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2025-08-31"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }
