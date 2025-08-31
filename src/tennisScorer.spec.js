@@ -14,22 +14,19 @@ describe("TennisScorer", () => {
 
   it("Jugador 1 marca un punto ---> 15 - love", () => {
     const scorer = new TennisScorer();
-    scorer.player1Scores();
+    scorer.player1Scores(1);
     expect(scorer.showScore()).toEqual("15 - Love");
   });
 
   it("Jugador 1 marca dos veces un punto ---> 30 - 0", () => {
     const scorer = new TennisScorer();
-    scorer.player1Scores();
-    scorer.player1Scores();
+    scorer.player1Scores(2);
     expect(scorer.showScore()).toEqual("30 - 0");
   });
 
   it("Jugador 1 marca tres veces un punto ---> 40 - 0", () => {
     const scorer = new TennisScorer();
-    scorer.player1Scores();
-    scorer.player1Scores();
-    scorer.player1Scores();
+    scorer.player1Scores(3);
     expect(scorer.showScore()).toEqual("40 - 0");
   });
 

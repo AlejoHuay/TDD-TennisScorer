@@ -13,9 +13,9 @@ class TennisScorer {
     }
     return "Love - Love";
   }
-
-  player1Scores() {
-    this.player1Points++;
+  
+  player1Scores(points) {
+    this.player1Points+=points;
   }
 }
 
