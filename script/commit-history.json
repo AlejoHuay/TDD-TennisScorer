@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "809ce01125cd2fb26ae90836b81e5bb937ea4c7b",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T22:30:51.000Z",
       "message": "feat: Jugador 1 marco 3 veces y jugador marca 3 --> Deuce",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/809ce01125cd2fb26ae90836b81e5bb937ea4c7b"
     },
     "stats": {
       "total": 21,
@@ -224,6 +224,25 @@
     },
     "coverage": 100,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T22:33:28.000Z",
+      "message": "feat: Estando en Deuce si marca jugador 1 -->  Advantage for 1",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-08-31"
+    },
+    "coverage": 100,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

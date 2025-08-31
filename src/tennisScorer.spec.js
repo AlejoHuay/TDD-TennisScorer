@@ -55,4 +55,11 @@ describe("TennisScorer", () => {
     expect(scorer.showScore()).toEqual("Deuce");
   });
 
+  it("Estando en Deuce si marca jugador 1 -->  Advantage for 1", () => {
+    const scorer = new TennisScorer();
+    scorer.player2Scores(3);
+    scorer.player1Scores(4);
+    expect(scorer.showScore()).toEqual("Advantage for 1");
+  });
+
 });
