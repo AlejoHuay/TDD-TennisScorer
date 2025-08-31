@@ -19,17 +19,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "98575ee13ca9049eb72c89d3ede53c683b224f22",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T21:36:55.000Z",
       "message": "Doc: Se agrego el plan de pruebas",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/98575ee13ca9049eb72c89d3ede53c683b224f22"
     },
     "stats": {
       "total": 30,
       "additions": 30,
       "deletions": 0,
+      "date": "2025-08-31"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T21:46:34.000Z",
+      "message": "feat: muestra tablero inicial de love-love",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 13,
+      "deletions": 14,
       "date": "2025-08-31"
     },
     "coverage": 100,
