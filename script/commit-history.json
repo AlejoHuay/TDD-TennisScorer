@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "20f685a1d4e33dd3fa5cd72d62362ced906a77cc",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T21:49:15.000Z",
       "message": "refactoring: ahora se encapsula en objetos la funcionalidad del scorer",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/20f685a1d4e33dd3fa5cd72d62362ced906a77cc"
     },
     "stats": {
       "total": 31,
@@ -72,6 +72,25 @@
     },
     "coverage": 66.67,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T21:51:07.000Z",
+      "message": "feat: Jugador 1 marca un punto ---> 15 - love",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-08-31"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
