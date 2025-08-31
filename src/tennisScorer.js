@@ -6,6 +6,8 @@ class TennisScorer {
   showScore(){
     if(this.player1Points === 1){
       return "15 - Love";
+    }else if(this.player1Points === 2){
+      return "30 - 0"
     }
     return "Love - Love";
   }

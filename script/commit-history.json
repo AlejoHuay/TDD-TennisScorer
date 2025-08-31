@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "db2511b52bf1bf9ab778bde5e42432bcf5599043",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T21:51:07.000Z",
       "message": "feat: Jugador 1 marca un punto ---> 15 - love",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/db2511b52bf1bf9ab778bde5e42432bcf5599043"
     },
     "stats": {
       "total": 9,
@@ -91,6 +91,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-08-31T21:53:46.000Z",
+      "message": "feat: Jugador 1 marca dos veces un punto ---> 30 - 0",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-08-31"
+    },
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
