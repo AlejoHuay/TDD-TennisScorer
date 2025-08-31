@@ -36,4 +36,10 @@ describe("TennisScorer", () => {
     expect(scorer.showScore()).toEqual("0 - 15");
   });
 
+  it("Jugador 2 marca dos veces un punto ---> 0 - 30", () => {
+    const scorer = new TennisScorer();
+    scorer.player2Scores(2);
+    expect(scorer.showScore()).toEqual("0 - 30");
+  });
+
 });
