@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a6dd670e701e413a9b07b5c99728cc5945f8ed2c",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-08-31T22:45:01.000Z",
       "message": "feat: se agrego 2 metodos Scores adicionales",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/a6dd670e701e413a9b07b5c99728cc5945f8ed2c"
     },
     "stats": {
       "total": 6,
@@ -300,6 +300,25 @@
     },
     "coverage": 92.31,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-09-01T01:06:50.000Z",
+      "message": "Estando en Anvantage for 2 si marca jugador 2 -->  Game for Player 2",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 42,
+      "deletions": 6,
+      "date": "2025-09-01"
+    },
+    "coverage": 53.85,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -30,10 +30,10 @@ describe("TennisScorer", () => {
     expect(scorer.showScore()).toEqual("40 - 0");
   });
 
-  it("Jugador 2 marca un punto ---> 0 - 15", () => {
+  it("Jugador 2 marca un punto ---> Love - 15", () => {
     const scorer = new TennisScorer();
     scorer.playerScores(2,1);
-    expect(scorer.showScore()).toEqual("0 - 15");
+    expect(scorer.showScore()).toEqual("Love - 15");
   });
 
   it("Jugador 2 marca dos veces un punto ---> 0 - 30", () => {
@@ -67,6 +67,13 @@ describe("TennisScorer", () => {
     scorer.playerScores(2,4);
     scorer.playerScores(1,3);
     expect(scorer.showScore()).toEqual("Advantage for 2");
+  });
+
+ it("Estando en Anvantage for 2 si marca jugador 2 -->  Game for Player 2", () => {
+    const scorer = new TennisScorer();
+    scorer.playerScores(2,5);
+    scorer.playerScores(1,3);
+    expect(scorer.showScore()).toEqual("Game for Player 2");
   });
 
 });
