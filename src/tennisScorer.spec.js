@@ -76,4 +76,11 @@ describe("TennisScorer", () => {
     expect(scorer.showScore()).toEqual("Game for Player 2");
   });
 
+  it("Estando en Anvantage for 1 si marca jugador 1 -->  Game for Player 1", () => {
+    const scorer = new TennisScorer();
+    scorer.playerScores(1,5);
+    scorer.playerScores(2,3);
+    expect(scorer.showScore()).toEqual("Game for Player 1");
+  });
+
 });
