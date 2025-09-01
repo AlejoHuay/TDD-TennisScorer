@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ca5707e8c203cd6cee8abaa2a3756dc816609d35",
     "author": "Alejandro Alvarez",
     "commit": {
       "date": "2025-09-01T01:07:51.000Z",
       "message": "Estando en Anvantage for 1 si marca jugador 1 -->  Game for Player 1",
-      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/ca5707e8c203cd6cee8abaa2a3756dc816609d35"
     },
     "stats": {
       "total": 7,
@@ -340,5 +340,24 @@
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alejandro Alvarez",
+    "commit": {
+      "date": "2025-09-01T05:16:14.000Z",
+      "message": "refactoring: mejoro el algoritmo showScore() de tennisScorer.js",
+      "url": "https://github.com/AlejoHuay/TDD-TennisScorer/commit/HEAD"
+    },
+    "stats": {
+      "total": 163,
+      "additions": 83,
+      "deletions": 80,
+      "date": "2025-09-01"
+    },
+    "coverage": 75.61,
+    "test_count": 12,
+    "failed_tests": 4,
+    "conclusion": "failure"
   }
 ]

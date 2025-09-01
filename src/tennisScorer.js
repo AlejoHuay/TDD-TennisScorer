@@ -1,73 +1,65 @@
 class TennisScorer {
-  constructor(){
+  constructor() {
     this.player1Points = 0;
     this.player2Points = 0;
+    this.bandera = true; 
   }
 
-  showScore(){
-    if(this.player1Points === 0 && this.player2Points === 0){
-      return "Love - Love"
-    }else if (this.player1Points === 1 && this.player2Points === 0){
-      return "15 - Love"
-    }else if(this.player1Points === 2 && this.player2Points === 0){
-      return "30 - 0"
-    }else if(this.player1Points === 3 && this.player2Points === 0){
-      return "40 - 0"
-    }else if(this.player2Points === 1 && this.player1Points === 0){
-      return "Love - 15"
-    }else if(this.player2Points === 2 && this.player1Points === 0){
-      return "0 - 30"
-    }else if(this.player2Points === 3 && this.player1Points === 0){
-      return "0 - 40"
-    }else if(this.player2Points === 3 && this.player1Points === 3){
-      return "Deuce"
-    }else if(this.player2Points === 3 && this.player1Points === 4){
-      return "Advantage for 1"
-    }else if(this.player2Points === 3 && this.player1Points === 5){
-      return "Game for Player 1"
-    }else if(this.player2Points === 4 && this.player1Points === 3){
-      return "Advantage for 2"
-    }else if(this.player2Points === 5 && this.player1Points === 3){
-      return "Game for Player 2"
-    }else if(this.player2Points === 4 && this.player1Points === 4){
-      this.player1Points = 3
-      this.player2Points = 3
-      return "Deuce"
-    }else{
-      let p1="";
-      let p2="";
-      let res="";
-      if      (this.player1Points === 1){
-        p1="15";
-      }else if(this.player1Points === 2){
-        p1="30";
-      }else if(this.player1Points === 3){
-        p1="40";
-      }
-      if      (this.player2Points === 1){
-        p2="15";
-      }else if(this.player2Points === 2){
-        p2="30";
-      }else if(this.player2Points === 3){
-        p2="40";
-      }
-      res= p1 + " - " + p2
-      return res;
+  resetGame() {
+    this.player1Points = 0;
+    this.player2Points = 0;
+    this.bandera = true;
+  }
+
+  showScore() {
+    if (!this.bandera) {
+      return `Game for Player ${this.player1Points > this.player2Points ? 1 : 2}`;
     }
+
+    const p1 = this.player1Points;
+    const p2 = this.player2Points;
+
+    if (p1 === 4 && p2 <= 2) { this.bandera = false; return "Game for Player 1"; }
+    if (p2 === 4 && p1 <= 2) { this.bandera = false; return "Game for Player 2"; }
+
+    if (p1 >= 3 || p2 >= 3) {
+      if (p1 === 3 && p2 === 3) return "Deuce";            // 40-40
+      if (p1 === 4 && p2 === 3) return "Advantage for 1";  // 40-Adv
+      if (p2 === 4 && p1 === 3) return "Advantage for 2";  // Adv-40
+      if (p1 === 5 && p2 === 3) { this.bandera = false; return "Game for Player 1"; }
+      if (p2 === 5 && p1 === 3) { this.bandera = false; return "Game for Player 2"; }
+    }
+
+    const scoreLabels = ["Love", "15", "30", "40"];
+    function scoreSelector(n) {
+      return scoreLabels[n] ?? String(n);
+    }
+
+    return scoreSelector(p1) + " - " + scoreSelector(p2);
+
   }
 
   playerScores(player, points) {
-    if(player === 1){
-      this.player1Points+=points;
-    }else{
-      this.player2Points+=points;
+    if (this.bandera === true){
+      if (player === 1){
+        this.player1Points += points;
+      }else{
+        this.player2Points += points;
+      }
+    } 
+
+    if (this.player1Points >= 3 && this.player2Points >= 3 && this.player1Points === this.player2Points) {
+      this.player1Points = 3;
+      this.player2Points = 3;
     }
+
   }
-  player1Scores(){
-    this.player1Points++;
+
+  player1Scores() { 
+    this.playerScores(1,1); 
   }
-  player2Scores(){
-    this.player2Points++;
+  player2Scores() { 
+    this.playerScores(2,1); 
   }
 }
 
